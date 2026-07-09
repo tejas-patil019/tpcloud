@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "TP Cloud Technologies"
+version = "1.0.0"
+id = "artifacts/tp-cloud"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20429
+
+[services.development]
+run = "pnpm --filter @workspace/tp-cloud run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/tp-cloud", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/tp-cloud/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20429"
+BASE_PATH = "/"
