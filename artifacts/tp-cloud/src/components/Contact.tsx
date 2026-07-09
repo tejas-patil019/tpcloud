@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeUp } from '@/lib/animations';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 
 export function Contact() {
   return (
@@ -53,16 +53,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Email Us</p>
-                  <p className="font-medium">contact@tpcloud.tech</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 text-white">
-                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                  <Phone size={20} className="text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-400">Call Us</p>
-                  <p className="font-medium">+1 (888) 555-0192</p>
+                  <p className="font-medium">tpcloudtechnologies@outlook.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 text-white">
@@ -71,7 +62,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Global Headquarters</p>
-                  <p className="font-medium">San Francisco, CA</p>
+                  <p className="font-medium">Hadapsar, Pune, Maharashtra</p>
                 </div>
               </div>
             </motion.div>
